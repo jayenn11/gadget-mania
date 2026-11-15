@@ -106,4 +106,17 @@ DB_USERNAME=root
 DB_PASSWORD=password_mysql_anda
 ```
 
-5. Jalankan migrasi beserta data awal (*
+5. Jalankan migrasi beserta data awal (*seeder*) atau impor berkas `gadget_mania_db.sql`:
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+6. Kompilasi aset frontend dan jalankan server:
+
+```bash
+npm run build
+php artisan serve
+```
+
+7. Akses aplikasi di: **`[http://127.0.0.1:8000](http://127.0.0.1:8000)`**
